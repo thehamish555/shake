@@ -1,5 +1,5 @@
 git add *
-git remove push.sh
+git rm push.sh
 git commit -m 'Update'
 git bracn -M main
 git remote add origin https://github.com/thehamish555/shake
