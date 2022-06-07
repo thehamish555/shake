@@ -13,7 +13,8 @@ st.set_page_config(
 
 lc, mc, rc = st.columns([4, 1, 2])
 
-rc.image(Image.open('crisislab_logo.png'), width=250, caption='CRISiSLab Logo')
+rc.image(Image.open('./media/crisislab_logo.png'), width=250,
+    caption='CRISiSLab Logo')
 
 lc.title('CRISiSLab')
 lc.subheader('About CRISiSLab')

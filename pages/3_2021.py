@@ -13,4 +13,4 @@ st.set_page_config(
 st.title('CRISiSLab Challenge 2021')
 st.write('In 2021, we launched our inaugural event and 6 colleges with over '
     '50 students in the Wellington region participated.')
-st.video(open('CRISiSLab Challenge 2021.mp4', 'rb').read())
+st.video(open('./media/CRISiSLab Challenge 2021.mp4', 'rb').read())
