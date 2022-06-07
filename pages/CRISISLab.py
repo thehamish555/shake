@@ -12,6 +12,6 @@ st.set_page_config(
 
 lc, mc, rc = st.columns([4, 1, 2])
 
-rc.image(Image.open('crisis_logo.png'), width=250, caption='CRISISLab Logo')
+rc.image(Image.open('crisislab_logo.png'), width=250, caption='CRISISLab Logo')
 
 st.title('CRISISLab')
