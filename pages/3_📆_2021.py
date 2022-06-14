@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title='Raspberry Shake App',
+    page_title='Raspberry Shake App | 2021',
     page_icon='🤖',
     layout='wide',
     menu_items={

@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 st.set_page_config(
-    page_title='Raspberry Shake App',
+    page_title='Raspberry Shake App | Home',
     page_icon='🤖',
     layout='wide',
     menu_items={
@@ -19,13 +19,10 @@ rc.image(Image.open('./media/massey_logo.png'), width=350)
 rc.image(Image.open('./media/jackbord_logo.png'), width=150)
 rc.image(Image.open('./media/paraparaumu_logo.png'), width=350)
 
-rc.markdown('<img src="/media/shake_logo.png" style="width: 350px">', unsafe_allow_html=True)
-rc.markdown('<img src="/media/crisislab_logo.png" style="width: 200px">', unsafe_allow_html=True)
-rc.markdown('<img src="/media/massey_logo.png" style="width: 350px">', unsafe_allow_html=True)
-rc.markdown('<img src="/media/jackbord_logo.png" style="width: 150px">', unsafe_allow_html=True)
-rc.markdown('<img src="/media/paraparaumu_logo.png" style="width: 350px">', unsafe_allow_html=True)
-
 lc.title('Raspberry Shake App')
 lc.write('This app is designed to display data for the Raspberry Shake for '
-    'the [CRISiSLab](/CRISiSLab). You can find information on the supporters '
+    'the [CRISiSLab](/CRISiSLab) challenge 2022. You can find information on the supporters '
     'and the competition using the navigation menu to the left.')
+lc.write('This app was created by one of the teams competing in the '
+    'competition, {Insert Name}. Learn more about our team in the '
+    '[Our Team](/Our_Team) section.')

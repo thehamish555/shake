@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 st.set_page_config(
-    page_title='Raspberry Shake App',
+    page_title='Raspberry Shake App | JackBord',
     page_icon='🤖',
     layout='wide',
     menu_items={
@@ -14,10 +14,10 @@ st.set_page_config(
 lc, mc, rc = st.columns([4, 1, 2])
 
 rc.image(Image.open('./media/jackbord_logo.png'), width=250,
-    caption='Jackbord Logo')
+    caption='JackBord Logo')
 
-lc.title('Jackbord')
-lc.write('Jackbord is the main supporter for this project at Paraparaumu '
+lc.title('JackBord')
+lc.write('JackBord is the main supporter for this project at Paraparaumu '
     'College. They have encouraged several groups of students to particpate '
     'in this competition.')
 lc.write('By recognising the challenges in teaching and learning robotics, '
