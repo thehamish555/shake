@@ -18,5 +18,5 @@ columns[1].image(Image.open('./portraits/unknown_person.png'), width=150, captio
 columns[2].image(Image.open('./portraits/unknown_person.png'), width=150, caption='Kentaro Baggott | Role')
 
 columns = st.columns([1, 2, 3])
-columns[1].image(Image.open('./portraits/shekinah_bryson.png'), width=150, caption='Shekinah Bryson | Role')
+columns[1].image(Image.open('./portraits/unknown_person.png'), width=150, caption='Shekinah Bryson | Role')
 columns[2].image(Image.open('./portraits/unknown_person.png'), width=150, caption='Joshua Ray | Role')
