@@ -2,18 +2,19 @@ import streamlit as st
 from PIL import Image
 
 st.set_page_config(
-    page_title='Raspberry Shake App | Data',
-    page_icon='🤖',
-    layout='wide',
-    menu_items={
-    'Get Help': None,
-    'About': '# Raspberry Shake App',
-    'Report a bug': None}
-    )
+                   page_title='Raspberry Shake App | Data',
+                   page_icon='🤖',
+                   layout='wide',
+                   menu_items={
+                   'Get Help': None,
+                   'About': '# Raspberry Shake App',
+                   'Report a bug': None})
+
 
 @st.cache
 def load_data():
     pass
+
 
 st.title('Data')
 if st.checkbox('Show Raw Data'):

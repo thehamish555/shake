@@ -1,14 +1,13 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title='Raspberry Shake App | 2022',
-    page_icon='🤖',
-    layout='wide',
-    menu_items={
-    'Get Help': None,
-    'About': '# Raspberry Shake App',
-    'Report a bug': None}
-    )
+                   page_title='Raspberry Shake App | 2022',
+                   page_icon='🤖',
+                   layout='wide',
+                   menu_items={
+                   'Get Help': None,
+                   'About': '# Raspberry Shake App',
+                   'Report a bug': None})
 
 st.title('CRISiSLab Challenge 2022')
 st.subheader('About')

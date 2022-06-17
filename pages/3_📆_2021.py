@@ -1,14 +1,13 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title='Raspberry Shake App | 2021',
-    page_icon='🤖',
-    layout='wide',
-    menu_items={
-    'Get Help': None,
-    'About': '# Raspberry Shake App',
-    'Report a bug': None}
-    )
+                   page_title='Raspberry Shake App | 2021',
+                   page_icon='🤖',
+                   layout='wide',
+                   menu_items={
+                   'Get Help': None,
+                   'About': '# Raspberry Shake App',
+                   'Report a bug': None})
 
 st.title('CRISiSLab Challenge 2021')
 st.write('In 2021, we launched our inaugural event and 6 colleges with over '
