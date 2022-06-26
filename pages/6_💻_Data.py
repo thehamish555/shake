@@ -36,6 +36,7 @@ endtime = endtime.replace(second=0, microsecond=0, minute=0,
                           hour=endtime.hour) + timedelta(hours=\
                                                          endtime.minute//60)
 starttime = endtime - timedelta(days=x, hours=y)
+shake_split = shake.split('.')
 text = columns[0].text('Getting Data...')
 try:
     data = get_data(starttime, endtime, shake)
@@ -44,7 +45,7 @@ except IndexError:
 except FDSNNoDataException:
     text.text('Invalid Shake ID or Shake Offline')
 except FDSNException:
-    text.text('No Internet Connection')
+    text.text('No Internet Connection or No Available Data')
 except:
     text.text('Unknown Error')
 else:
@@ -54,6 +55,11 @@ else:
     columns[0].write(f'✨ Viewing Time Frame For {starttime} - {endtime} ✨')
     text.text('Loading Graph')
     columns[0].write(data.plot())
+    columns[0].subheader('Live Data')
+    columns[0].markdown('<iframe width="500" height="350" src="https://'
+                        f'dataview.raspberryshake.org/#/embed/{shake_split[0]}'
+                        f'/{shake_split[1]}/{shake_split[2]}/{shake_split[3]}"'
+                        '></iframe>', unsafe_allow_html=True)
     text.text('')
 
     if st.checkbox('Show Raw Data'):
